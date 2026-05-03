@@ -1,0 +1,4 @@
+<!-- Opdracht 3: echo een string door middel van een variable-->
+ <?php
+ $s = "hallo ik ben een olifant";
+ echo $s;?>
