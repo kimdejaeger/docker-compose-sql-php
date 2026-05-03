@@ -28,3 +28,25 @@ php
 $s = "Hallo";
 var_dump($s);
 -->
+
+<?php
+function pr($data)
+{
+    echo "<pre>";
+    var_dump($data);
+    echo "</pre>";
+}
+  $s = "Hallo";
+  pr($s);
+  $i = 16;
+  pr($i);
+  $f = 3.14;
+  pr($f);
+  $a = array("rood", "blauw", "groen");
+  pr($a);
+  $a2 = array(10,9,8);
+  pr($a2);
+  $a3 = array("appel",5,"kiwi",1);
+  pr($a3);
+?>
+
