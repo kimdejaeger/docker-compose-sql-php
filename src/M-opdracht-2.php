@@ -6,4 +6,5 @@ Gebruik de functie pi() en bereken de omtrek van de cirkel (2 * pi() * $straal).
 -->
 <?php
 $straal = 5;
-echo "De omtrek van de cirkels is: " . 2 * pi() * $straal;
+$omtrek = 2 * pi() * $straal;
+echo "De omtrek van de cirkels is: " . $omtrek;
