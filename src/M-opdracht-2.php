@@ -1,0 +1,9 @@
+<!-- 
+Opdracht 2:
+Opdracht: Maak een variabele $straal en stel deze in op 5. 
+Gebruik de functie pi() en bereken de omtrek van de cirkel (2 * pi() * $straal). Geef het resultaat weer.
+
+-->
+<?php
+$straal = 5;
+echo "De omtrek van de cirkels is: " . 2 * pi() * $straal;
