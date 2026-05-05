@@ -1,0 +1,13 @@
+<!-- 
+Opdracht 1: Integers en Typecontrol
+Schrijf een PHP-script dat een variabele $num declareert met een integer waarde. Controleer of deze waarde een integer is met behulp van is_int() en geef het resultaat weer.
+-->
+
+<?php
+$num = 42;
+if(is_int($num)){
+    echo "Het is een integer.";
+} else {
+    echo "Het is geen integer.";
+}
+?>
