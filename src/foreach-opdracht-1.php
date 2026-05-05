@@ -1,13 +1,16 @@
 <!-- 
 Opdracht 1:
 Maak zelf een array $garage met minimaal 2 auto’s.
+
 -->
 
-   autos = ["Volvo", "Toyota"];
-    foreach (autos as auto) {
-        echo auto . " ";
-    }
-    <?php
+<?php
+    $autos = ["Volvo,", "Toyota"];
+     foreach ($autos as $auto) {
+         echo $auto . " ";
+     }
+
+     echo "<br><br>";
 $garage = [
     [
         "merk" => "Volvo",
