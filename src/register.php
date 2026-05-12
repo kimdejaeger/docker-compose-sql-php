@@ -1,11 +1,18 @@
 <?php
 $conn = require_once "partials/dbconnection-kim.php";
-// print_r($_POST);
 
-$stmt = $conn->prepare("SELECT * FROM users;");
-// $stmt->bind_param("s", $platform);
+$stmt = $conn->prepare("INSERT INTO users (username, password) VALUES (?, ?);");
+$formUsername = $_POST['name'];
+$formPassword = $_POST['password'];
+$stmt->bind_param("ss", $formUsername, $formPassword);
 $stmt->execute();
-$result = $stmt->get_result();
-var_dump($result);
+
+if ($stmt->affected_rows === 1) {
+    echo "Gebruiker succesvol aangemaakt";
+} else {
+    echo "Er ging iets mis";
+}
 
 ?>
+
+
