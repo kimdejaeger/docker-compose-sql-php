@@ -17,7 +17,8 @@ services:
       MYSQL_PASSWORD: "veiligwachtwoord"
       MYSQL_DATABASE: "games"
     volumes:
-      #- mysqldata:/var/lib/mysql
+      - ./mysqldata:/var/lib/mysql
+      - ./mysqltmp:/tmp
       - ./init.sql:/docker-entrypoint-initdb.d/init.sql
       - certs:/ssl
       - mysqlconf:/etc/mysql/conf.d/
