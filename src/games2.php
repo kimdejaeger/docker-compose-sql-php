@@ -27,6 +27,7 @@
     if ($result->num_rows === 0)
       exit('No rows');
 
+    echo "<table>";
     while ($row = $result->fetch_assoc()) {
       echo "<tr>";
       echo "<td> <a href='details.php?id=" . $row['id'] . "'>" . $row['id'] . "</a></td>";
