@@ -1,10 +1,11 @@
 <?php
 $conn = require_once "partials/dbconnection-kim.php";
+
 $formUsername = $_POST['name'] ?? '';
 $formPassword = $_POST['password'] ?? '';
 
-$stmt = $conn->prepare("SELECT * FROM users WHERE username = ? AND password = ?;");
-$stmt->bind_param("ss", $formUsername, $formPassword);
+$stmt = $conn->prepare("SELECT * FROM users WHERE username = ?");
+$stmt->bind_param("s", $formUsername);
 $stmt->execute();
 $result = $stmt->get_result();
 
