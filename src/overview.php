@@ -1,3 +1,15 @@
+<?php
+session_start();
+
+if (!isset($_SESSION['loggedin'])) {
+    header("Location: login.html");
+    exit();
+}
+
+echo "Welkom ";
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,6 +25,7 @@
       <th>username</th>
     </tr>
 <?php
+
     $conn = require_once "partials/dbconnection-kim.php";
 
     $stmt = $conn->prepare("SELECT * FROM users");
@@ -35,4 +48,3 @@
     
 </body>
 </html>
-

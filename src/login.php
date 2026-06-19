@@ -1,4 +1,5 @@
 <?php
+session_start();
 $conn = require_once "partials/dbconnection-kim.php";
 
 $formUsername = $_POST['name'] ?? '';
@@ -10,6 +11,10 @@ $stmt->execute();
 $result = $stmt->get_result();
 
 if ($result->num_rows === 1){
+
+    $_SESSION['loggedin'] = true;
+    $_SESSION['username'] = $username;
+    
     header("Location: overview.php");
     exit();
 } else {
