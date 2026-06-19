@@ -9,15 +9,29 @@
     <div>
       <form action="register.php" method="POST">
         <h2>Register</h2>
-        <input type="text" name="name" placeholder="Username" required />
+        <input type="text" name="username" placeholder="Username" required />
         <br />
-        <input
-          type="password"
-          name="password"
-          placeholder="Password"
-          required
-        />
+        <br />
+        <input type="password" name="password" placeholder="Password" required />
+        <br />
+        <br />
+        <input type="text" name="Voornaam" placeholder="Voornaam" required />
+        <br />
+        <br />
+        <input type="text" name="tussenvoegsel" placeholder="Tussenvoegsel" />
+        <br />
+        <br />
+        <input type="text" name="achternaam" placeholder="Achternaam" required />
+        <br />
+        <br />
+        <input type="date" name="geboortedatum" placeholder="Geboortedatum" required />
+        <br />
+        <br />
+        <input type="email" name="email" placeholder="Email" required />
+        <br />
+        <br />
         <div>
+          <br />
           <button type="submit" id="inlogButton">Register</button>
         </div>
       </form>
