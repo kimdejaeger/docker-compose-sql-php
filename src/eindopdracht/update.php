@@ -49,7 +49,9 @@
     <button type="submit">
         Opslaan
     </button>
-
+    <button onclick="window.location.href='overview.php'; return false;">
+        Cancel
+    </button>
 </form>
 
 </body>
