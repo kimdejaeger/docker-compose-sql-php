@@ -37,7 +37,7 @@ echo "Welkom ";
     echo "<table>";
     while ($row = $result->fetch_assoc()) {
       echo "<tr>";
-      echo "<td> <a href='details.php?id=" . $row['id'] . "'>" . $row['id'] . "</a></td>";
+      echo "<td> <a href='update.php?id=" . $row['id'] . "'>" . $row['id'] . "</a></td>";
       echo "<td id='username'>" . $row['username'] . "</td>";
       echo "</tr>";
     }
@@ -46,5 +46,6 @@ echo "Welkom ";
     $stmt->close();
     ?>
     
+    <button><a href="logout.php">Logout</a></button>
 </body>
 </html>
