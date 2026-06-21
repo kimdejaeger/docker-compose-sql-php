@@ -6,7 +6,6 @@ if (!isset($_SESSION['loggedin'])) {
     exit();
 }
 
-echo "Welkom ";
 ?>
 
 
@@ -39,22 +38,23 @@ echo "Welkom ";
     if ($result->num_rows === 0)
       exit('No rows');
 
-    echo "<table>";
     while ($row = $result->fetch_assoc()) {
       echo "<tr>";
       echo "<td> <a href='update.php?id=" . $row['id'] . "'>" . $row['id'] . "</a></td>";
       echo "<td id='voornaam'>" . $row['voornaam'] . "</td>";
-       echo "<td id='tussenvoegsel'>" . $row['tussenvoegsel'] . "</td>";
-        echo "<td id='achternaam'>" . $row['achternaam'] . "</td>";
-         echo "<td id='username'>" . $row['username'] . "</td>";
-         echo "<td id='geboortedatum'>" . $row['geboortedatum'] . "</td>";
-          echo "<td id='email'>" . $row['email'] . "</td>";
+      echo "<td id='tussenvoegsel'>" . $row['tussenvoegsel'] . "</td>";
+      echo "<td id='achternaam'>" . $row['achternaam'] . "</td>";
+      echo "<td id='username'>" . $row['username'] . "</td>";
+      echo "<td id='geboortedatum'>" . $row['geboortedatum'] . "</td>";
+      echo "<td id='email'>" . $row['email'] . "</td>";
+      echo "<td id='verwijder'>" . "<a href='delete.php?id=" . $row['id'] . "'>Verwijder</a>" . "</td>";
       echo "</tr>";
     }
     echo "</table>";
 
     $stmt->close();
     ?>
+     <button><a href="add_user.html">Voeg persoon toe</a></button>
     
     <button><a href="logout.php">Logout</a></button>
 </body>
