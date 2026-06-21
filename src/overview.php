@@ -22,7 +22,12 @@ echo "Welkom ";
     <table>
     <tr>
       <th>Id</th>
-      <th>username</th>
+      <th>Voornaam</th>
+      <th>Tussenvoegsel</th>
+      <th>Achternaam</th>
+      <th>Username</th>
+      <th>Geboortedatum</th>
+      <th>Email</th>
     </tr>
 <?php
 
@@ -38,7 +43,12 @@ echo "Welkom ";
     while ($row = $result->fetch_assoc()) {
       echo "<tr>";
       echo "<td> <a href='update.php?id=" . $row['id'] . "'>" . $row['id'] . "</a></td>";
-      echo "<td id='username'>" . $row['username'] . "</td>";
+      echo "<td id='voornaam'>" . $row['voornaam'] . "</td>";
+       echo "<td id='tussenvoegsel'>" . $row['tussenvoegsel'] . "</td>";
+        echo "<td id='achternaam'>" . $row['achternaam'] . "</td>";
+         echo "<td id='username'>" . $row['username'] . "</td>";
+         echo "<td id='geboortedatum'>" . $row['geboortedatum'] . "</td>";
+          echo "<td id='email'>" . $row['email'] . "</td>";
       echo "</tr>";
     }
     echo "</table>";
