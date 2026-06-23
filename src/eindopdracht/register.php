@@ -5,7 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 $formUsername = htmlspecialchars(trim($_POST["username"] ?? ''));
 $password = htmlspecialchars($_POST["password"] ?? '');
-$voornaam = htmlspecialchars(trim($_POST["Voornaam"] ?? ''));
+$voornaam = htmlspecialchars(trim($_POST["voornaam"] ?? ''));
 $tussenvoegsel = htmlspecialchars(trim($_POST["tussenvoegsel"] ?? ''));
 $achternaam = htmlspecialchars(trim($_POST["achternaam"] ?? ''));
 $geboortedatum = htmlspecialchars(trim($_POST["geboortedatum"] ?? ''));
@@ -119,7 +119,7 @@ if ($email === '') {
 
     <input
         type="text"
-        name="Voornaam"
+        name="voornaam"
         placeholder="Voornaam"
         minlength="2"
         required
