@@ -54,7 +54,7 @@ if (!isset($_SESSION['loggedin'])) {
 
     $stmt->close();
     ?>
-     <button><a href="add_user.html">Voeg persoon toe</a></button>
+     <button><a href="add_user.php">Voeg persoon toe</a></button>
     
     <button><a href="logout.php">Logout</a></button>
 </body>

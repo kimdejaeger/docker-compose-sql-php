@@ -23,28 +23,28 @@
     ?>
 <form action="handle_update.php" method="POST">
 
-    <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
+    <input type="hidden" name="id" value="<?php echo $row['id']; ?>"><br>
 
     Voornaam:
-    <input type="text" name="voornaam" value="<?php echo $row['voornaam']; ?>">
+    <input type="text" name="voornaam" value="<?php echo $row['voornaam']; ?>"><br>
 
      Tussenvoegsel:
-    <input type="text" name="tussenvoegsel" value="<?php echo $row['tussenvoegsel']; ?>">
+    <input type="text" name="tussenvoegsel" value="<?php echo $row['tussenvoegsel']; ?>"><br>
 
     Achternaam:
-    <input type="text" name="achternaam" value="<?php echo $row['achternaam']; ?>">
+    <input type="text" name="achternaam" value="<?php echo $row['achternaam']; ?>"><br>
 
      Geboortedatum: 
-    <input type="date" name="geboortedatum" value="<?php echo $row['geboortedatum']; ?>">
+    <input type="date" name="geboortedatum" value="<?php echo $row['geboortedatum']; ?>"><br>
 
     Email:
-    <input type="email" name="email" value="<?php echo $row['email']; ?>">
+    <input type="email" name="email" value="<?php echo $row['email']; ?>"><br>
 
     Username:
-    <input type="text" name="username" value="<?php echo $row['username']; ?>">
+    <input type="text" name="username" value="<?php echo $row['username']; ?>"><br>
 
     New password:
-    <input type="password" name="password" value="">
+    <input type="password" name="password" value=""><br>
 
     <button type="submit">
         Opslaan
