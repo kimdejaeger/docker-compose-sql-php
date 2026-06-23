@@ -23,35 +23,68 @@
     ?>
 <form action="handle_update.php" method="POST">
 
-    <input type="hidden" name="id" value="<?php echo $row['id']; ?>"><br>
+    <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
 
-    Voornaam:
-    <input type="text" name="voornaam" value="<?php echo $row['voornaam']; ?>"><br>
+    <table>
+        <tr>
+            <td>Voornaam:</td>
+            <td>
+                <input type="text" name="voornaam" value="<?php echo $row['voornaam']; ?>">
+            </td>
+        </tr>
 
-     Tussenvoegsel:
-    <input type="text" name="tussenvoegsel" value="<?php echo $row['tussenvoegsel']; ?>"><br>
+        <tr>
+            <td>Tussenvoegsel:</td>
+            <td>
+                <input type="text" name="tussenvoegsel" value="<?php echo $row['tussenvoegsel']; ?>">
+            </td>
+        </tr>
 
-    Achternaam:
-    <input type="text" name="achternaam" value="<?php echo $row['achternaam']; ?>"><br>
+        <tr>
+            <td>Achternaam:</td>
+            <td>
+                <input type="text" name="achternaam" value="<?php echo $row['achternaam']; ?>">
+            </td>
+        </tr>
 
-     Geboortedatum: 
-    <input type="date" name="geboortedatum" value="<?php echo $row['geboortedatum']; ?>"><br>
+        <tr>
+            <td>Geboortedatum:</td>
+            <td>
+                <input type="date" name="geboortedatum" value="<?php echo $row['geboortedatum']; ?>">
+            </td>
+        </tr>
 
-    Email:
-    <input type="email" name="email" value="<?php echo $row['email']; ?>"><br>
+        <tr>
+            <td>Email:</td>
+            <td>
+                <input type="email" name="email" value="<?php echo $row['email']; ?>">
+            </td>
+        </tr>
 
-    Username:
-    <input type="text" name="username" value="<?php echo $row['username']; ?>"><br>
+        <tr>
+            <td>Username:</td>
+            <td>
+                <input type="text" name="username" value="<?php echo $row['username']; ?>">
+            </td>
+        </tr>
 
-    New password:
-    <input type="password" name="password" value=""><br>
+        <tr>
+            <td>Nieuw wachtwoord:</td>
+            <td>
+                <input type="password" name="password">
+            </td>
+        </tr>
 
-    <button type="submit">
-        Opslaan
-    </button>
-    <button onclick="window.location.href='overview.php'; return false;">
-        Cancel
-    </button>
+        <tr>
+            <td colspan="2" style="text-align: right;">
+                <button type="submit">Opslaan</button>
+                <button type="button" onclick="window.location.href='overview.php';">
+                    Cancel
+                </button>
+            </td>
+        </tr>
+    </table>
+
 </form>
 
 </body>

@@ -14,8 +14,9 @@ if (!isset($_SESSION['loggedin'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Overview</title>
     <link rel="stylesheet" href="css/style-kim.css">
+
 </head>
 <body>
     <table>
@@ -54,8 +55,9 @@ if (!isset($_SESSION['loggedin'])) {
 
     $stmt->close();
     ?>
-     <button><a href="add_user.php">Voeg persoon toe</a></button>
-    
-    <button><a href="logout.php">Logout</a></button>
+     <a href="add_user.php" class="btn">Voeg persoon toe</a>
+     <!-- <a href="logout.php" class="btn">Log out</a> -->
+     <button onclick="window.location.href='logout.php'; return false;">Logout</button>
+
 </body>
 </html>

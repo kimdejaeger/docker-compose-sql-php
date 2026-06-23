@@ -96,11 +96,12 @@ if ($email === '') {
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Add user</title>
+    <link rel="stylesheet" href="css/style-kim.css">
   </head>
   <body>
     <div>
-      <form action="add_user.php" method="POST">
+    <form action="add_user.php" method="POST">
         <h2>Voeg persoon toe</h2>
 
         <input
@@ -164,14 +165,12 @@ if ($email === '') {
     />
     <br><br>
 
-          <button type="submit">Voeg persoon toe</button>
-        </div>
-         <button onclick="window.location.href='overview.php'; return false;">
-        Cancel
-    </button>
-      </form>
+    <button type="submit" class="btn">Voeg persoon toe</button>
+    <button onclick="window.location.href='overview.php'; return false;">Cancel</button>
+
+    </form>
     </div>
-     <div>
+    <div>
         <?php
         if (!empty($errors)) {
             echo "<ul>";
